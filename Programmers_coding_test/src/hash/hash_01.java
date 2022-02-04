@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /* 
-코딩테스트연습 > 해시 > 완주하지 못한 선수 (LV.1) (2022.01.23 통과)
+코딩테스트연습 > 해시 > 완주하지 못한 선수 (LV.1) (2022.01.23 완료)
 
 문제 설명
 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
@@ -63,11 +63,13 @@ public class hash_01 {
         
         HashMap<String,Integer> map = new HashMap<String,Integer>();
         
+        //참여자 participant for문
         for(String p : participant) {
         	//key: p, value = map에서 p가 없다면1, 있으면 기존값 + 1 으로 put 실행
         	map.put(p, map.get(p) == null ? 1 : map.get(p) +1);
         }
         
+        //완주자 completion for문
         for(String c : completion) {
         	//key : c, value = map에서 c를 찾은다음 기존값에서 -1 빼주기. 완주자는 0, 미완주자는 끝까지 1로 남아있게됨. 
         	map.put(c, map.get(c)-1);

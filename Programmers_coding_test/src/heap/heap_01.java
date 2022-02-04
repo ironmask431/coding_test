@@ -3,7 +3,7 @@ package heap;
 import java.util.PriorityQueue;
 
 /*
-코딩테스트연습 > 힙(heap) > 더맵게(Lv.2)
+코딩테스트연습 > 힙(heap) > 더맵게(Lv.2) (2022.02.04 완료)
 
 문제 설명
 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 
