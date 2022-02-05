@@ -43,7 +43,7 @@ public class dfs_bfs_01 {
 		// TODO Auto-generated method stub
 		
 		int[] numbers = {1,2,3};
-    	int target = 0;
+    		int target = 0;
 		
 		solution(numbers, target);
 	}
