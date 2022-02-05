@@ -86,7 +86,7 @@ public class dfs_bfs_01 {
 		
 		//index값이 numbers의 마지막까지 가면 재귀함수 종료 
 		if(numbers.length-1 == index) {
-			//cal_1, cal_2값이 각각 target과 일치할때마다 answer2의 값 ++ 
+			//종료 시 cal_1, cal_2값이 각각 target과 일치할때마다 answer2의 값 ++ 
 			if(cal_1 == target) {
 				answer2++;
 			}
