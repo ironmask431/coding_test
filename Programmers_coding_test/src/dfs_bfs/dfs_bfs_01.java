@@ -75,7 +75,7 @@ public class dfs_bfs_01 {
 	public static void dfs(int[] numbers, int target, int now, int index) {
 		index++;
 		System.out.println("----index="+index);
-		//현재값(now) 과 numbers배열의 다음값을 +, - 로 각각 계산하는 메소드
+		//현재값(now) 과 numbers배열의 다음값을 +, - 로 각각 계산
 		//현재값 + 다음값
 		int cal_1 = now + numbers[index];
 		//현재값 - 다음값
