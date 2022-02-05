@@ -74,7 +74,7 @@ public class stack_queue_01 {
 		List<Integer> list = new ArrayList<Integer>();
 		
 		//큐가 다 소모될때까지
-		while(q.peek() != null) {
+		while(q.size() > 0) {
 			int answerNum = 0; //한번에 완료된 작업의 개수 (answer에 담을 숫자)
 			day++; //진행일자++
 			
