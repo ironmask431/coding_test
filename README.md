@@ -16,5 +16,6 @@
 
 * 정렬 > k번째수 (Lv.1) [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/sort/sort_01.java)
 
+* 탐욕법(Greedy) > 체육복(Lv.1) [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/greedy/greedy_01.java)
 
 
