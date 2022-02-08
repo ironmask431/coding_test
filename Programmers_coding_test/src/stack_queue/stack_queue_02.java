@@ -81,27 +81,18 @@ public class stack_queue_02 {
         	int q_index_one = q_index.poll();//q_index 에서 첫번째 값 꺼냄
         	int h_one = h.peek(); //max힙의 첫번째 값 확인
         	
-        	System.out.println("q_one="+q_one);
-        	System.out.println("h_one="+h_one);
-        	
         	//큐의 첫번째요소가 중요도 가장높은 게 아니라면 q와 q_index에서 꺼낸 첫번째요소를 각 큐의 마지막으로 보냄.
         	if(q_one < h_one) {
         		q.add(q_one);
         		q_index.add(q_index_one);
-        		System.out.println(q_one+"맨뒤로");
         	}else {
         		//큐의 첫번째요소가 중요도 가장높은 거라면 max힙에서도 해당값 꺼냄.
         		h_one = h.poll();
         		list.add(q_index_one);
-        		System.out.println(q_index_one+"리스트에++");
         	}
         	cnt++;
-        	System.out.println("---------");
         }
-        
-        for(int i : list) {
-        	System.out.println(i);
-        }
+
         answer = list.indexOf(location)+1;
         System.out.println("answer="+answer);
         
