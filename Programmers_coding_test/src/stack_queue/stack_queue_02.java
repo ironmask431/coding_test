@@ -80,8 +80,6 @@ public class stack_queue_02 {
         	h.add(priorities[i]);
         }
         
-        int cnt = 0;
-        
         while(q.size() > 0) {
         	int q_one = q.poll(); //q에서 첫번째 값 꺼냄
         	int q_index_one = q_index.poll();//q_index 에서 첫번째 값 꺼냄
@@ -96,7 +94,6 @@ public class stack_queue_02 {
         		h_one = h.poll();
         		list.add(q_index_one);
         	}
-        	cnt++;
         }
 
         answer = list.indexOf(location)+1;
