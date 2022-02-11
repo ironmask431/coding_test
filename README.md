@@ -14,6 +14,8 @@
 
 * [Lv.2] 스택/큐 > 기능개발 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/stack_queue/stack_queue_01.java)
 
+* [Lv.2] 해시 > 위장 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/hash/hash_03.java)
+
 * [Lv.2] 해시 > 전화번호목록 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/hash/hash_02.java)
 
 * [Lv.1] 해시 > 완주하지 못한 선수 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/hash/hash_01.java)
