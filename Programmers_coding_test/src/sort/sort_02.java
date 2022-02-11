@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
 코딩테스트연습 > 정렬 > 가장 큰 수(Lv.2) (2022.02.09 완료)
+** (다른 풀이 참고하여 코드작성) **
 
 문제 설명
 0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.
@@ -46,7 +47,7 @@ public class sort_02 {
             text_arr[i] = numbers[i]+"";
         }
         
-        //compareTo를 이용해서 정렬 (구글링해서 코드 참조함...)
+        //compareTo를 이용해서 정렬
         Arrays.sort(text_arr,(s1,s2) -> (s2+s1).compareTo(s1+s2));
 
         //text_arr를 answer에 입력 
