@@ -32,66 +32,66 @@ public class allSearch_02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		String numbers = "172";
 		solution(numbers);
 	}
-	
-	public static int solution(String numbers) {
-        int answer = 0;
-        
-        //현재 종이조각 에서 조합가능한 최대수 (2장이면 99, 3장이면 999)
-        int max = (int) Math.pow(10,numbers.length())-1;
-     
-        //0 부터 최대수 까지 for문
-        for(int i = 0; i <= max ; i++) {
-            
-            //now = 현재 체크하는 수
-            String now = i+"";
-            char[] now_arr = now.toCharArray();
-            boolean pass = true;
-            
-            //현재 수를 자리수별로 쪼갠 숫자 검사.
-            for(char c : now_arr) {   
-                
-                //numbers 에서 현재 숫자의 개수 
-                long count_num = numbers.chars().filter(ch -> ch == c).count();
-                
-                //now에서 현재 숫자의 개수
-                long count_now = now.chars().filter(ch -> ch == c).count();
 
-                //현재숫자가 numbers에는 없는 숫자라면 false 처리
-                if(count_num == 0) pass = false;
-                
-                //현재숫자의 numbers에서의 개수보다  now에서의 개수가 더 많으면 false처리
-                if(count_num < count_now) pass = false; 
-                
-            } 
-            if(pass) {  
-                //i가 소수일경우 
-                if(findSosu(i)) {
-                	System.out.println("소수="+i);
-                	answer++;
-                }              
-            }
-        }     
-        System.out.println("answer="+answer);
-        return answer;
-    }
-	
-	//소수 여부 return 메소드
-    public static boolean findSosu(int num) {
-        boolean flag = true;
-        for(int i = 2; i < num ; i++) {
-            if(num % i == 0) {
-                flag = false;    
-            }
-        }
-        //0,1은 false 처리
-        if(num <= 1) {
-            flag = false;
-        }
-        return flag;
-    }
+	public static int solution(String numbers) {
+		int answer = 0;
+
+		//현재 종이조각 에서 조합가능한 최대수 (2장이면 99, 3장이면 999)
+		int max = (int) Math.pow(10,numbers.length())-1;
+
+		//0 부터 최대수 까지 for문
+		for(int i = 0; i <= max ; i++) {
+
+		    //now = 현재 체크하는 수
+		    String now = i+"";
+		    char[] now_arr = now.toCharArray();
+		    boolean pass = true;
+
+		    //현재 수를 자리수별로 쪼갠 숫자 검사.
+		    for(char c : now_arr) {   
+
+			//numbers 에서 현재 숫자의 개수 
+			long count_num = numbers.chars().filter(ch -> ch == c).count();
+
+			//now에서 현재 숫자의 개수
+			long count_now = now.chars().filter(ch -> ch == c).count();
+
+			//현재숫자가 numbers에는 없는 숫자라면 false 처리
+			if(count_num == 0) pass = false;
+
+			//현재숫자의 numbers에서의 개수보다  now에서의 개수가 더 많으면 false처리
+			if(count_num < count_now) pass = false; 
+
+		    } 
+		    if(pass) {  
+			//i가 소수일경우 
+			if(findSosu(i)) {
+				System.out.println("소수="+i);
+				answer++;
+			}              
+		    }
+		}     
+		System.out.println("answer="+answer);
+		return answer;
+	    }
+
+	     //소수 여부 return 메소드
+	    public static boolean findSosu(int num) {
+		boolean flag = true;
+		for(int i = 2; i < num ; i++) {
+		    if(num % i == 0) {
+			flag = false;    
+		    }
+		}
+		//0,1은 false 처리
+		if(num <= 1) {
+		    flag = false;
+		}
+		return flag;
+	    }
 }
 
