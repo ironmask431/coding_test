@@ -24,7 +24,7 @@ n	computers				return
 
 */
 public class dfs_bfs_02 {
-
+	//방문노드 기록용 
 	static int[] visited;
 	
 	public static void main(String[] args) {
@@ -41,20 +41,20 @@ public class dfs_bfs_02 {
 	}
 	
 	public static int solution(int n, int[][] computers) {
-        int answer = 0;
-        visited = new int[n];      
-        for(int i=0; i<computers.length; i++) {
-        	//방문하지 않은 노드일경우
-        	if(visited[i] != 1) {
-        		System.out.println("new 탐색시작="+i);
-        		//네트워크 수++
-        		answer++;
-        		dfs(computers,i);
-        	}	
-        }
-        System.out.println("answer="+answer);
-        return answer;
-    }
+		int answer = 0;
+		visited = new int[n];      
+		for(int i=0; i<computers.length; i++) {
+			//방문하지 않은 노드일경우
+			if(visited[i] != 1) {
+				System.out.println("new 탐색시작="+i);
+				//네트워크 수++
+				answer++;
+				dfs(computers,i);
+			}	
+		}
+		System.out.println("answer="+answer);
+		return answer;
+	    }
 	
 	public static void dfs(int[][] computers, int start) {
 		//start지점 방문 처리
