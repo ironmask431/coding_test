@@ -5,6 +5,8 @@
 -----
 #### 직접 푼 문제
 
+* [Lv.3] 힙(heap) > 이중우선순위큐 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/heap/heap_02.java)
+
 * [Lv.3] 깊이/너비 우선탐색(DFS/BFS) > 네트워크 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/dfs_bfs/dfs_bfs_02.java)
 
 * [Lv.2] 완전탐색 > 소수 찾기 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/allSearch/allSearch_02.java)
