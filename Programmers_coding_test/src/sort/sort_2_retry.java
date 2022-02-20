@@ -4,8 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
-코딩테스트연습 > 정렬 > 가장 큰 수(Lv.2) (2022.02.09 완료)
-** (다른 풀이 참고하여 코드작성) **
+코딩테스트연습 > 정렬 > 가장 큰 수(Lv.2) (2022.02.20 완료)
 
 문제 설명
 0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.
@@ -32,10 +31,8 @@ public class sort_2_retry {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		int[] numbers = {3, 30, 34, 5, 9};
-		//9 5 34 3 30
-		
+		//9 5 34 3 30		
 		solution(numbers);		
 	}
 	
@@ -78,8 +75,7 @@ public class sort_2_retry {
         if(stArr[0].equals("0")) {
         	answer = "0";
         } 
-        System.out.println("answer="+answer);
-        
+        System.out.println("answer="+answer);        
         return answer;
     }
 }
