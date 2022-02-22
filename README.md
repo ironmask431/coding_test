@@ -32,7 +32,7 @@
 ------
 #### 다른 풀이 참고 해서 푼 문제
 
-* [Lv.2] 탐욕법 > 가장 큰 수 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/greedy/greedy_02.java)
+* [Lv.2] 탐욕법 > 큰 수 만들기 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/greedy/greedy_02.java)
 
 * [Lv.2] 해시 > 위장 [코드보기](https://github.com/ironmask431/programmers_coding_test/blob/main/Programmers_coding_test/src/hash/hash_03.java)
 
