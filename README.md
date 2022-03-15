@@ -1,4 +1,4 @@
-# programmers_coding_test
+# coding_test
 
 [프로그래머스 코딩테스트 연습](https://programmers.co.kr/learn/challenges) 를 하면서 만든 코드들 입니다.
 
